@@ -1,0 +1,91 @@
+<!-- BEGIN __FOOTER__ -->
+<div class="copyright">Copyright {tdate} </div>
+<div id="blanket" style="display:none;"></div>     
+<div id="popUpDiv" style="display:none;border:2px solid #000000;">   
+<form id="form1" name="form1" method="post" action="#">
+<input type="hidden" name="cid" id="cid" value="" />
+<input type="hidden" name="qtitle" id="qtitle" value="" />
+<input type="hidden" name="editid" id="editid" value="{editid}" />
+<!-- onsubmit="return frmvalidate(this);" -->
+<div id="loginbox"><br />
+  <table width="100%" cellpadding="5" cellspacing="5" border="0">
+    <tr>
+      <td colspan="2" class="lheading">Please add question here</td>
+    </tr>
+    <tr>
+      <td colspan="2"><div class="errorblock" id="error_message_question"></div></td>
+    </tr>
+    <tr>
+      <td align="right" width="50%">Module Name</td>
+      <td align="left"><div id="show_module">{selmodule}</div></td>
+    </tr>
+    <tr>
+      <td align="right">Question</td>
+      <td align="left"><textarea cols="40" rows="1" name="question" id="question"></textarea></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+ <div class="trlogin" align="center">
+ <div class="tdlogin1"><input type="button" name="submit1" id="submit1" value="Add Question" onclick="fnAjaxCall('error_message_question','addquestion.php?eid=0','form1')" />&nbsp;&nbsp;
+ <input type="button" name="cancle" id="cancel" value="Cancel" onclick="popup('popUpDiv',0,0);" /></div>
+ </div>
+</div>
+</form>
+     </div>
+
+<div id="popUpDiv1" style="display:none;border:2px solid #000000;">   
+<form id="form11" name="form11" method="post" action="#">
+<input type="hidden" name="qid" id="qid" value="" />
+<input type="hidden" name="hid" id="hid" value="" />
+<div id="loginbox">
+  <table width="100%" cellpadding="5" cellspacing="5" border="0">
+    <tr>
+      <td colspan="2"><div class="errorblock" id="error_message1"></div></td>
+    </tr>
+    <tr>
+      <td align="right" width="15%" valign="top">Options :</td>
+      <td align="left">
+        <div id="showopt"></div>
+      </td>
+    </tr>
+  </table>
+ <div class="trlogin" align="center">
+ <div class="tdlogin1"><input type="button" name="submit1" id="submit1" value="Add option" onclick="fnAjaxCall('error_message1','addoption.php','form11')" />&nbsp;&nbsp;
+ <input type="button" name="cancle" id="cancel" value="Cancel" onclick="popup_howmany('popUpDiv1',0);" /></div>
+ </div>
+</div>
+</form>
+     </div>
+     
+<div id="popUpDiv2" style="display:none;border:2px solid #000000;">   
+<form id="form12" name="form12" method="post" action="#">
+<div id="loginbox">
+  <table width="100%" cellpadding="5" cellspacing="5" border="0">
+    <tr>
+      <td align="left">
+        <div id="show_options"></div>
+      </td>
+    </tr>
+  </table>
+ <div class="trlogin" align="center">
+ <div class="tdlogin1"><input type="button" name="cancle" id="cancel" value="Cancel" onclick="popup_option('popUpDiv2',0,{qid});" /></div>
+ </div>
+</div>
+</form>
+     </div>
+<script type="text/javascript">
+ if (typeof document.body.style.maxHeight != "undefined") {
+ 	//alert("Ie 7");
+ } else {
+	if(document.getElementById("aleftmenu")){
+		document.getElementById("aleftmenu").style.height = "550px";	
+	}
+	if(document.getElementById("adminloginbox")){
+		document.getElementById("adminloginbox").style.height = "550px";
+	}
+ }
+</script>
+<!-- END __FOOTER__ -->

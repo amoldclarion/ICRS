@@ -1,0 +1,20 @@
+a:4:{s:6:"blocks";a:3:{s:10:"__global__";s:230:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+{__INNER_PAGE__}
+</body>
+</html>";s:10:"INNER_PAGE";s:217:"<div class="maindiv">
+<!-- header -->
+<div id="header">{header}</div>
+<!-- header -->
+<!-- Start content -->
+<div id="content">
+{__ADMIN_INNER_PAGE__}
+</div>
+<!-- End content -->
+<div id="footer">{footer}</div>
+</div>";s:16:"ADMIN_INNER_PAGE";s:107:"<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+<div id="arightmenu" class="arightmenu">&nbsp;</div>";}s:9:"variables";a:3:{s:10:"__global__";a:2:{s:7:"metatag";b:1;s:14:"__INNER_PAGE__";b:1;}s:10:"INNER_PAGE";a:3:{s:6:"header";b:1;s:20:"__ADMIN_INNER_PAGE__";b:1;s:6:"footer";b:1;}s:16:"ADMIN_INNER_PAGE";a:1:{s:8:"leftmenu";b:1;}}s:8:"children";a:3:{s:10:"__global__";a:1:{s:10:"INNER_PAGE";b:1;}s:10:"INNER_PAGE";a:1:{s:16:"ADMIN_INNER_PAGE";b:1;}s:16:"ADMIN_INNER_PAGE";a:0:{}}s:9:"functions";a:3:{s:10:"__global__";a:0:{}s:10:"INNER_PAGE";a:0:{}s:16:"ADMIN_INNER_PAGE";a:0:{}}}

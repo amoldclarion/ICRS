@@ -1,0 +1,68 @@
+a:4:{s:6:"blocks";a:6:{s:10:"__global__";s:230:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+{__INNER_PAGE__}
+</body>
+</html>";s:10:"INNER_PAGE";s:217:"<div class="maindiv">
+<!-- header -->
+<div id="header">{header}</div>
+<!-- header -->
+<!-- Start content -->
+<div id="content">
+{__ADMIN_INNER_PAGE__}
+</div>
+<!-- End content -->
+<div id="footer">{footer}</div>
+</div>";s:16:"ADMIN_INNER_PAGE";s:695:"<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+<div id="arightmenu" class="arightmenu">
+<br />
+<br />
+<div class="manageheader">View Statistics</div>
+<div style="clear:both;"><br /></div>
+<table width="90%" cellpadding="0" cellspacing="1" border="0" align="center" bgcolor="#000000">
+<tr><td>
+<table width="100%" cellpadding="1" cellspacing="1" border="0" align="left" bgcolor="#FFFFFF">
+<tr>
+<td class="managetabhead113" width="20%"><strong>User name</strong></td>
+<td>{uname}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div style="clear:both;"><br /></div>
+{__StartManageFiles__}
+{__NoManageFiles__}
+<br />
+<div class="paging" style="padding-top:20px;">{paging}</div>
+<br /><br />
+</div>";s:16:"StartManageFiles";s:578:"<div class="managetable12">
+<table width="100%" cellpadding="5" cellspacing="0">
+<tr>
+<td width="16%" class="managetabhead112">Ipaddress</td>
+<td width="16%" class="managetabhead112">Date & time</td>
+<td width="17%" class="managetabhead112">Country</td>
+<td width="14%" class="managetabhead112">Region</td>
+<td width="12%" class="managetabhead112">City</td>
+<td width="14%" class="managetabhead112">Time spent</td>
+<td width="14%" class="managetabhead112">View</td>
+</tr>
+{__managefiles__}
+</table>
+</div>
+<table width="90%" align="center">
+<tr>
+<td>{paging}</td>
+</tr>
+</table>";s:11:"managefiles";s:218:"<tr class="managetabhead113">
+<td>{ipaddress}</td>
+<td>{date}</td>
+<td>{country}</td>
+<td>{reqion}</td>
+<td>{city}</td>
+<td>{tspent}</td>
+<td><a href="viewinduadial.php?mid={mid}" class="green_link">View</a></td>
+</tr>";s:13:"NoManageFiles";s:56:"<div class="errorblock">{space}No Statistics found</div>";}s:9:"variables";a:6:{s:10:"__global__";a:2:{s:7:"metatag";b:1;s:14:"__INNER_PAGE__";b:1;}s:10:"INNER_PAGE";a:3:{s:6:"header";b:1;s:20:"__ADMIN_INNER_PAGE__";b:1;s:6:"footer";b:1;}s:16:"ADMIN_INNER_PAGE";a:5:{s:8:"leftmenu";b:1;s:5:"uname";b:1;s:20:"__StartManageFiles__";b:1;s:17:"__NoManageFiles__";b:1;s:6:"paging";b:1;}s:16:"StartManageFiles";a:2:{s:15:"__managefiles__";b:1;s:6:"paging";b:1;}s:11:"managefiles";a:7:{s:9:"ipaddress";b:1;s:4:"date";b:1;s:7:"country";b:1;s:6:"reqion";b:1;s:4:"city";b:1;s:6:"tspent";b:1;s:3:"mid";b:1;}s:13:"NoManageFiles";a:1:{s:5:"space";b:1;}}s:8:"children";a:6:{s:10:"__global__";a:1:{s:10:"INNER_PAGE";b:1;}s:10:"INNER_PAGE";a:1:{s:16:"ADMIN_INNER_PAGE";b:1;}s:16:"ADMIN_INNER_PAGE";a:2:{s:16:"StartManageFiles";b:1;s:13:"NoManageFiles";b:1;}s:16:"StartManageFiles";a:1:{s:11:"managefiles";b:1;}s:11:"managefiles";a:0:{}s:13:"NoManageFiles";a:0:{}}s:9:"functions";a:6:{s:10:"__global__";a:0:{}s:10:"INNER_PAGE";a:0:{}s:16:"ADMIN_INNER_PAGE";a:0:{}s:16:"StartManageFiles";a:0:{}s:11:"managefiles";a:0:{}s:13:"NoManageFiles";a:0:{}}}

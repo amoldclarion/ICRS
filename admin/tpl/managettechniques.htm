@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+<!-- BEGIN INNER_PAGE -->
+<div class="maindiv">
+	<!-- header -->
+		<div id="header">{header}</div>
+    <!-- header -->
+     <!-- Start content -->
+       <div id="content">
+       	 <!-- BEGIN ADMIN_INNER_PAGE -->
+         	<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+            <div id="arightmenu" class="arightmenu">
+            <br />
+<br />
+			<div class="manageheader">Manage Techniques</div>
+            <div style="clear:both;"><br /></div>
+              <form name="frmSearch" method="post" action="managettechniques.php" style="display:inline;">
+            <div class="manasearch">
+            	<div class="mamasearchtext">Search&nbsp;:&nbsp;</div>              
+                <div class="manseartxt"><select name="status" id="status">
+                          	<option value="--" selected="selected">Select Page</option>
+                            <option value="1" {act}>Active</option>
+                            <option value="0" {inact}>InActive</option>
+                          </select>&nbsp; <input type="submit" name="submit" value="Go" /></div>              
+            </div>
+            </form>
+            <div style="clear:both;"><br /></div>
+            <!-- BEGIN StartManageFiles -->
+            <div class="managetable">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="managetabhead112">Title</td>
+                  <td class="managetabhead112">Desc</td>
+                  <td class="managetabhead112">Order</td>
+                  <td class="managetabhead112">Status</td>
+                  <td class="managetabhead112">Modify</td>
+                  <td class="managetabhead112">Delete</td>
+                </tr>
+                <!-- BEGIN managefiles -->
+                <tr class="managetabhead113">
+                  <td>{title}</td>
+                  <td>{sdesc}</td>
+                  <td>{torder}</td>
+                  <td><a href="changetstatus.php?id={id}&activeflg={activeflg}&return={returnurl}" class="green_link">{status}</a></td>
+                  <td><a href="edittechniques.php?id={id}&return={returnurl}" class="green_link">Modify</a></td>
+                  <td><a href="deletetechniques.php?id={id}&return={returnurl}"  onClick="return confirmLink('Do you really wish to delete this technique?', this,'deletetechniques.php?id={id}&return={returnurl}')" class="green_link">Delete</a></td>
+                </tr>
+                <!-- END managefiles -->
+              </table>
+            </div>
+            <table width="90%" align="center">
+                <tr>
+                  <td>{paging}</td>
+                </tr>
+              </table>
+            <!-- END StartManageFiles -->
+            <!-- BEGIN NoManageFiles -->
+             <div class="errorblock">{space}No techniques found</div>
+            <!-- END NoManageFiles -->
+            <br />
+
+			<div class="paging" style="padding-top:20px;">{paging}</div>
+            <br /><br />
+
+            </div>
+         <!-- END ADMIN_INNER_PAGE -->
+       </div>
+     <!-- End content -->
+     <div id="footer">{footer}</div>
+</div>
+<!-- END INNER_PAGE -->
+</body>
+</html>

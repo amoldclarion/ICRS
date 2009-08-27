@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+<!-- BEGIN INNER_PAGE -->
+<div class="maindiv">
+	<!-- header -->
+		<div id="header">{header}</div>
+    <!-- header -->
+     <!-- Start content -->
+       <div id="content">
+       	 <!-- BEGIN ADMIN_INNER_PAGE -->
+         	<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+            <div id="arightmenu" class="arightmenu"><br />
+            <!-- Add Content Start -->
+            	<div class="addsectab" align="center">
+                  <div class="addsecheading">Add Quiz</div>
+                  <div style="clear:both;"></div>
+                    <table width="100%" cellpadding="4" cellspacing="4" border="0">
+                      <tr>
+                        <td colspan="2" align="center"><div class="errorblock"><div id="qtitle_e_message">{error_message}</div></div></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" align="right"><span class="style1">Field marked as * are mandatory</span></td>
+                      </tr>
+                      <form name="frmaddsec" id="frmaddsec" action="addquizzes.php" method="post" enctype="multipart/form-data" style="display:inline;" onsubmit="return validatequizzes(this);">
+                      <tr>
+                        <td align="right" width="50%"><span class="style1">*</span>Course Name : </td>
+                        <td>
+                          <div align="left">
+                            <select name="course_id" id="course_id" onchange="return fnAjaxCall2('show_module','getmodule.php','frmaddsec',0)">
+                              <option value="--">--Select course name--</option>
+	                           {coptval}
+                            </select>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" align="right"><hr style="width:90%" align="center" /></td>
+                      </tr>
+                      <tr>
+                        <td align="right" width="50%"><span class="style1">*</span>Quiz Title : </td>
+                        <td align="left"><input type="text" name="quiztitle" id="quiztitle" value="{quiztitle}" onblur="assignval(this)"/></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><div align="left">
+                          <input type="submit" name="submit" value="Add quiz" />
+                        </div></td>
+                      </tr>
+                      </form>
+                      <tr>
+                        <td colspan="2" align="center">Click on plus sign for adding question <input type="image" src="images/PlusSign.gif" border="0" onclick="return checkTitle(this);" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" align="center"> 
+                         <div id="added_question"></div>
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                <div style="clear:both;"><br /></div>
+            <!-- Add Content End -->
+            </div>
+         <!-- END ADMIN_INNER_PAGE -->
+       </div>
+     <!-- End content -->
+     <div id="footer">{footer}</div>
+<!-- END INNER_PAGE -->
+</body>
+</html>

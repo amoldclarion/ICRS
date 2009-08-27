@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+<!-- BEGIN INNER_PAGE -->
+<div class="maindiv">
+	<!-- header -->
+		<div id="header">{header}</div>
+    <!-- header -->
+     <!-- Start content -->
+       <div id="content">
+       	 <!-- BEGIN ADMIN_INNER_PAGE -->
+         	<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+            <div id="arightmenu" class="arightmenu"><br />
+            <!-- Add Content Start -->
+            	<div class="addsectab" align="center">
+                  <div class="addsecheading">Edit User</div>
+                  <div style="clear:both;"></div>
+                  <form name="frmaddsec" action="edituser.php?id={id}&return={return}" method="post" enctype="multipart/form-data" style="display:inline;" onsubmit="return validateuseredit(this);">
+                    <input type="hidden" name="id" value="{id}" />
+                    <input type="hidden" name="return" value="{return}" />
+                  	<div class="errorblock">{error_message}</div>
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2"></div>
+                      <div class="addContTabTd3" align="right"><span class="style1">Field marked as * are mandatory</span></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="addContTab">
+                    	<div class="addContTabTd2">User Type : </div>
+                        <div class="addContTabTd3" align="left"><strong>{utype}</strong></div>
+                    </div>
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                    	<div class="addContTabTd2">Email : </div>
+                        <div class="addContTabTd3" align="left"><strong>{email}</strong></div>
+                    </div>
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2">First name : </div>
+                      <div class="addContTabTd3" align="left"><input type="text" name="firstname" id="firstname" value="{firstname}" /></div>
+                    </div>
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2">Last name : </div>
+                      <div class="addContTabTd3" align="left"><input type="text" name="lastname" id="lastname" value="{lastname}" /></div>
+                    </div>
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2"><span class="style1">*</span>User name : </div>
+                      <div class="addContTabTd3" align="left"><input type="text" name="username" id="username" value="{username}" /></div>
+                    </div>
+                    <!-- BEGIN temp_time -->
+                    	<div style="clear:both;"><br /></div>
+                        <div class="addContTab">
+                      <div class="addContTabTd2">Date : </div>
+                      <div class="addContTabTd3" align="left">
+                        <SCRIPT type="text/javascript" ID="js18">
+							var cal18 = new CalendarPopup("testdiv1");
+							cal18.setCssPrefix("TEST");
+						</SCRIPT>
+
+                        <INPUT TYPE="text" NAME="date18" id="date18" VALUE="{date18}" SIZE="25" readonly="readonly">
+<A HREF="#" onClick="cal18.select(document.forms['frmaddsec'].date18,'anchor18','yyyy-MM-dd'); return false;" TITLE="cal18.select(document.forms['frmaddsec'].date18,'anchor1x','yyyy-MM-dd'); return false;" NAME="anchor18" ID="anchor18">select</A>
+<a href="#" onclick="document.getElementById('date18').value='';">Clear date</a>
+                      </div>
+                    </div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2">&nbsp;</div>
+                      <div class="addContTabTd3" align="left">--OR--</div>
+                    </div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2">Expire hours : </div>
+                      <div class="addContTabTd3" align="left">
+                      	<input type="text" name="noofhrs" id="noofhrs" value="{noofhrs}" />&nbsp;&nbsp;
+                        <select name="howmany" id="howmany">
+                          <option value="HOUR" {selhrs}>Hours</option>
+                          <option value="DAY" {selday}>Days</option>
+                          <option value="MONTH" {selmon}>Months</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- END temp_time -->
+                    <!--div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2">Old Password : </div>
+                      <div class="addContTabTd3" align="left"><input type="password" name="strOPassword" id="strOPassword" value="" /></div>
+                    </div-->
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2">New Password : </div>
+                      <div class="addContTabTd3" align="left"><input type="password" name="strNPassword" id="strNPassword" value="" /></div>
+                    </div>
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                      <div class="addContTabTd2">New Confirm Password : </div>
+                      <div class="addContTabTd3" align="left"><input type="password" name="cPassword" id="cPassword" value="" /></div>
+                    </div>
+                    
+                    <div style="clear:both;"><br /></div>
+                    <div class="addContTab">
+                    	<div class="addContTabTd2">&nbsp;</div>
+                        <div class="addContTabTd3" align="left"><input type="submit" name="submit" value="Save" />&nbsp;&nbsp;<input type="button" name="cancle" value="Cancel" onclick="window.location.href='manageuser.php'" /></div>
+                    </div>
+                  </form>
+                  <div id="testdiv1" style="position:absolute;visibility:hidden;background-color:white;layer-background-color:white;"></div>
+                </div>
+                <div style="clear:both;"><br /></div>
+            <!-- Add Content End -->
+            </div>
+         <!-- END ADMIN_INNER_PAGE -->
+       </div>
+     <!-- End content -->
+     <div id="footer">{footer}</div>
+</div>
+<!-- END INNER_PAGE -->
+</body>
+</html>

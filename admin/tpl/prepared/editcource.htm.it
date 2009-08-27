@@ -1,0 +1,58 @@
+a:4:{s:6:"blocks";a:3:{s:10:"__global__";s:230:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+{__INNER_PAGE__}
+</body>
+</html>";s:10:"INNER_PAGE";s:217:"<div class="maindiv">
+<!-- header -->
+<div id="header">{header}</div>
+<!-- header -->
+<!-- Start content -->
+<div id="content">
+{__ADMIN_INNER_PAGE__}
+</div>
+<!-- End content -->
+<div id="footer">{footer}</div>
+</div>";s:16:"ADMIN_INNER_PAGE";s:1391:"<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+<div id="arightmenu" class="arightmenu"><br />
+<!-- Add Content Start -->
+<div class="addsectab" align="center">
+<div class="addsecheading">Save Courses</div>
+<div style="clear:both;"></div>
+<form name="frmaddsec" action="editcource.php?id={id}&return={return}" method="post" enctype="multipart/form-data" style="display:inline;" onsubmit="return validatecources(this);">
+<table width="100%" cellpadding="4" cellspacing="4" border="0">
+<tr>
+<td colspan="2" align="center"><div class="errorblock">{error_message}</div></td>
+</tr>
+<tr>
+<td colspan="2" align="right"><span class="style1">Field marked as * are mandatory</span></td>
+</tr>
+<tr>
+<td align="right" width="50%"><span class="style1">*</span>Courses Name : </td>
+<td><div align="left">
+<input type="text" name="cname" id="cname" value="{cname}" />
+</div></td>
+</tr>
+<tr>
+<td align="right" width="50%">Courses Description : </td>
+<td><div align="left">
+<textarea id="cdescription" name="cdescription" rows="3" cols="45">{cdescription}</textarea>
+</div></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><div align="left">
+<input type="submit" name="submit" value="Save" />
+&nbsp;
+<input type="button" name="cancel" value="Cancel" onclick="window.location.href='managecource.php'" />
+</div></td>
+</tr>
+</table>
+</form>
+</div>
+<div style="clear:both;"><br /></div>
+<!-- Add Content End -->
+</div>";}s:9:"variables";a:3:{s:10:"__global__";a:2:{s:7:"metatag";b:1;s:14:"__INNER_PAGE__";b:1;}s:10:"INNER_PAGE";a:3:{s:6:"header";b:1;s:20:"__ADMIN_INNER_PAGE__";b:1;s:6:"footer";b:1;}s:16:"ADMIN_INNER_PAGE";a:6:{s:8:"leftmenu";b:1;s:2:"id";b:1;s:6:"return";b:1;s:13:"error_message";b:1;s:5:"cname";b:1;s:12:"cdescription";b:1;}}s:8:"children";a:3:{s:10:"__global__";a:1:{s:10:"INNER_PAGE";b:1;}s:10:"INNER_PAGE";a:1:{s:16:"ADMIN_INNER_PAGE";b:1;}s:16:"ADMIN_INNER_PAGE";a:0:{}}s:9:"functions";a:3:{s:10:"__global__";a:0:{}s:10:"INNER_PAGE";a:0:{}s:16:"ADMIN_INNER_PAGE";a:0:{}}}

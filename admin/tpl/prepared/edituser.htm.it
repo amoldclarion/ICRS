@@ -1,0 +1,112 @@
+a:4:{s:6:"blocks";a:4:{s:10:"__global__";s:230:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+{__INNER_PAGE__}
+</body>
+</html>";s:10:"INNER_PAGE";s:217:"<div class="maindiv">
+<!-- header -->
+<div id="header">{header}</div>
+<!-- header -->
+<!-- Start content -->
+<div id="content">
+{__ADMIN_INNER_PAGE__}
+</div>
+<!-- End content -->
+<div id="footer">{footer}</div>
+</div>";s:16:"ADMIN_INNER_PAGE";s:3141:"<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+<div id="arightmenu" class="arightmenu"><br />
+<!-- Add Content Start -->
+<div class="addsectab" align="center">
+<div class="addsecheading">Edit User</div>
+<div style="clear:both;"></div>
+<form name="frmaddsec" action="edituser.php?id={id}&return={return}" method="post" enctype="multipart/form-data" style="display:inline;" onsubmit="return validateuseredit(this);">
+<input type="hidden" name="id" value="{id}" />
+<input type="hidden" name="return" value="{return}" />
+<div class="errorblock">{error_message}</div>
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2"></div>
+<div class="addContTabTd3" align="right"><span class="style1">Field marked as * are mandatory</span></div>
+</div>
+<div style="clear:both;"></div>
+<div class="addContTab">
+<div class="addContTabTd2">User Type : </div>
+<div class="addContTabTd3" align="left"><strong>{utype}</strong></div>
+</div>
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">Email : </div>
+<div class="addContTabTd3" align="left"><strong>{email}</strong></div>
+</div>
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">First name : </div>
+<div class="addContTabTd3" align="left"><input type="text" name="firstname" id="firstname" value="{firstname}" /></div>
+</div>
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">Last name : </div>
+<div class="addContTabTd3" align="left"><input type="text" name="lastname" id="lastname" value="{lastname}" /></div>
+</div>
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2"><span class="style1">*</span>User name : </div>
+<div class="addContTabTd3" align="left"><input type="text" name="username" id="username" value="{username}" /></div>
+</div>
+{__temp_time__}
+<!--div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">Old Password : </div>
+<div class="addContTabTd3" align="left"><input type="password" name="strOPassword" id="strOPassword" value="" /></div>
+</div-->
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">New Password : </div>
+<div class="addContTabTd3" align="left"><input type="password" name="strNPassword" id="strNPassword" value="" /></div>
+</div>
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">New Confirm Password : </div>
+<div class="addContTabTd3" align="left"><input type="password" name="cPassword" id="cPassword" value="" /></div>
+</div>
+<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">&nbsp;</div>
+<div class="addContTabTd3" align="left"><input type="submit" name="submit" value="Save" />&nbsp;&nbsp;<input type="button" name="cancle" value="Cancel" onclick="window.location.href='manageuser.php'" /></div>
+</div>
+</form>
+<div id="testdiv1" style="position:absolute;visibility:hidden;background-color:white;layer-background-color:white;"></div>
+</div>
+<div style="clear:both;"><br /></div>
+<!-- Add Content End -->
+</div>";s:9:"temp_time";s:1218:"<div style="clear:both;"><br /></div>
+<div class="addContTab">
+<div class="addContTabTd2">Date : </div>
+<div class="addContTabTd3" align="left">
+<SCRIPT type="text/javascript" ID="js18">
+var cal18 = new CalendarPopup("testdiv1");
+cal18.setCssPrefix("TEST");
+</SCRIPT>
+<INPUT TYPE="text" NAME="date18" id="date18" VALUE="{date18}" SIZE="25" readonly="readonly">
+<A HREF="#" onClick="cal18.select(document.forms['frmaddsec'].date18,'anchor18','yyyy-MM-dd'); return false;" TITLE="cal18.select(document.forms['frmaddsec'].date18,'anchor1x','yyyy-MM-dd'); return false;" NAME="anchor18" ID="anchor18">select</A>
+<a href="#" onclick="document.getElementById('date18').value='';">Clear date</a>
+</div>
+</div>
+<div class="addContTab">
+<div class="addContTabTd2">&nbsp;</div>
+<div class="addContTabTd3" align="left">--OR--</div>
+</div>
+<div class="addContTab">
+<div class="addContTabTd2">Expire hours : </div>
+<div class="addContTabTd3" align="left">
+<input type="text" name="noofhrs" id="noofhrs" value="{noofhrs}" />&nbsp;&nbsp;
+<select name="howmany" id="howmany">
+<option value="HOUR" {selhrs}>Hours</option>
+<option value="DAY" {selday}>Days</option>
+<option value="MONTH" {selmon}>Months</option>
+</select>
+</div>
+</div>";}s:9:"variables";a:4:{s:10:"__global__";a:2:{s:7:"metatag";b:1;s:14:"__INNER_PAGE__";b:1;}s:10:"INNER_PAGE";a:3:{s:6:"header";b:1;s:20:"__ADMIN_INNER_PAGE__";b:1;s:6:"footer";b:1;}s:16:"ADMIN_INNER_PAGE";a:10:{s:8:"leftmenu";b:1;s:2:"id";b:1;s:6:"return";b:1;s:13:"error_message";b:1;s:5:"utype";b:1;s:5:"email";b:1;s:9:"firstname";b:1;s:8:"lastname";b:1;s:8:"username";b:1;s:13:"__temp_time__";b:1;}s:9:"temp_time";a:5:{s:6:"date18";b:1;s:7:"noofhrs";b:1;s:6:"selhrs";b:1;s:6:"selday";b:1;s:6:"selmon";b:1;}}s:8:"children";a:4:{s:10:"__global__";a:1:{s:10:"INNER_PAGE";b:1;}s:10:"INNER_PAGE";a:1:{s:16:"ADMIN_INNER_PAGE";b:1;}s:16:"ADMIN_INNER_PAGE";a:1:{s:9:"temp_time";b:1;}s:9:"temp_time";a:0:{}}s:9:"functions";a:4:{s:10:"__global__";a:0:{}s:10:"INNER_PAGE";a:0:{}s:16:"ADMIN_INNER_PAGE";a:0:{}s:9:"temp_time";a:0:{}}}

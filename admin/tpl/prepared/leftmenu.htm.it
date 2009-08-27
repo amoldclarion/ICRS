@@ -1,0 +1,47 @@
+a:4:{s:6:"blocks";a:2:{s:10:"__global__";s:15:"{__LEFT_MENU__}";s:9:"LEFT_MENU";s:2133:"<div class="lmenu">
+<div class="lmenutitle" align="center">{left}</div>
+<!--div class="linsec"><a href="inner.php" class="green_link">Admin Home</a></div-->
+<div class="linsec">
+<div>
+<span class="linsecb">Curriculum Management</span>
+<div class="linsec"><a href="addcource.php" class="green_link">Add Course</a></div>
+<div class="linsec"><a href="managecource.php" class="green_link">Manage Course</a></div>
+<div class="linsec"><a href="addmodule.php" class="green_link">Add Module</a></div>
+<div class="linsec"><a href="managemodule.php" class="green_link">Manage Module</a></div>
+</div>
+<div>
+<span class="linsecb">Quiz Management</span>
+<div class="linsec"><a href="addquizzes.php" class="green_link">Add Quiz</a></div>
+<div class="linsec"><a href="managequizzes.php" class="green_link">Manage Quizzes</a></div>
+</div>
+<div>
+<span class="linsecb">User Statistics</span>
+<div class="linsec"><a href="managestats.php" class="green_link">Manage Statistics</a></div>
+</div>
+<div>
+<span class="linsecb">Teaching techniques</span>
+<div class="linsec"><a href="addttechniques.php" class="green_link">Add techniques</a></div>
+<div class="linsec"><a href="managettechniques.php" class="green_link">Manage techniques</a></div>
+</div>
+<div>
+<span class="linsecb">News Management</span>
+<div class="linsec"><a href="addnews.php" class="green_link">Add news</a></div>
+<div class="linsec"><a href="managenews.php" class="green_link">Manage news</a></div>
+</div>
+<div>
+<span class="linsecb">User Management</span>
+<div class="linsec"><a href="adduser.php" class="green_link">Add user</a></div>
+<div class="linsec"><a href="manageuser.php" class="green_link">Manage user</a></div>
+</div>
+<div>
+<span class="linsecb">Contact</span>
+<div class="linsec"><a href="usercontact.php" class="green_link">User Contact</a></div>
+</div>
+<!--div>
+<span class="linsecb">Page Management</span>
+<div class="linsec"><a href="addpage.php" class="green_link">Add page</a></div>
+<div class="linsec"><a href="managepage.php" class="green_link">Manage page</a></div>
+</div-->
+</div>
+<div class="linsec"><a href="logout.php" class="green_link">Logout</a></div>
+</div>";}s:9:"variables";a:2:{s:10:"__global__";a:1:{s:13:"__LEFT_MENU__";b:1;}s:9:"LEFT_MENU";a:1:{s:4:"left";b:1;}}s:8:"children";a:2:{s:10:"__global__";a:1:{s:9:"LEFT_MENU";b:1;}s:9:"LEFT_MENU";a:0:{}}s:9:"functions";a:2:{s:10:"__global__";a:0:{}s:9:"LEFT_MENU";a:0:{}}}

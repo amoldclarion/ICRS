@@ -1,0 +1,49 @@
+a:4:{s:6:"blocks";a:3:{s:10:"__global__";s:230:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+{__INNER_PAGE__}
+</body>
+</html>";s:10:"INNER_PAGE";s:217:"<div class="maindiv">
+<!-- header -->
+<div id="header">{header}</div>
+<!-- header -->
+<!-- Start content -->
+<div id="content">
+{__ADMIN_INNER_PAGE__}
+</div>
+<!-- End content -->
+<div id="footer">{footer}</div>
+</div>";s:16:"ADMIN_INNER_PAGE";s:1027:"<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+<div id="arightmenu" class="arightmenu"><br />
+<!-- Add Content Start -->
+<div class="addsectab" align="center">
+<div class="addsecheading">View Contact</div>
+<div style="clear:both;"></div>
+<form name="frmaddsec" action="viewcontact.php" method="post" enctype="multipart/form-data" style="display:inline;">
+<table width="100%" cellpadding="4" cellspacing="4" border="0">
+<tr>
+<td align="right" width="20%"><strong>Name</strong> : </td>
+<td>
+<div align="left">{name}</div></td>
+</tr>
+<tr>
+<td align="right"><strong>Email Address</strong> : </td>
+<td><div align="left">{emailaddress}</div></td>
+</tr>
+<tr>
+<td align="right" width="20%"><strong>Message</strong> : </td>
+<td><div align="left">{message}</div></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><div align="left"><input type="button" name="Cancel" value="Cancel" onclick="window.location.href='usercontact.php'" /></div></td>
+</tr>
+</table>
+</form>
+</div>
+<div style="clear:both;"><br /></div>
+<!-- Add Content End -->
+</div>";}s:9:"variables";a:3:{s:10:"__global__";a:2:{s:7:"metatag";b:1;s:14:"__INNER_PAGE__";b:1;}s:10:"INNER_PAGE";a:3:{s:6:"header";b:1;s:20:"__ADMIN_INNER_PAGE__";b:1;s:6:"footer";b:1;}s:16:"ADMIN_INNER_PAGE";a:4:{s:8:"leftmenu";b:1;s:4:"name";b:1;s:12:"emailaddress";b:1;s:7:"message";b:1;}}s:8:"children";a:3:{s:10:"__global__";a:1:{s:10:"INNER_PAGE";b:1;}s:10:"INNER_PAGE";a:1:{s:16:"ADMIN_INNER_PAGE";b:1;}s:16:"ADMIN_INNER_PAGE";a:0:{}}s:9:"functions";a:3:{s:10:"__global__";a:0:{}s:10:"INNER_PAGE";a:0:{}s:16:"ADMIN_INNER_PAGE";a:0:{}}}

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+<!-- BEGIN INNER_PAGE -->
+<div class="maindiv">
+	<!-- header -->
+		<div id="header">{header}</div>
+    <!-- header -->
+     <!-- Start content -->
+       <div id="content">
+       	 <!-- BEGIN ADMIN_INNER_PAGE -->
+         	<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+            <div id="arightmenu" class="arightmenu">
+            <br />
+<br />
+			<div class="manageheader">Manage Statistics</div>
+            <div style="clear:both;"><br /></div>
+            <!-- BEGIN StartManageFiles -->
+            <div class="managetable">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="managetabhead112">User name</td>
+                  <td class="managetabhead112">Last date visited</td>
+                  <td class="managetabhead112">Country</td>
+                  <td class="managetabhead112">Total time spend</td>
+                  <td class="managetabhead112">View</td>
+                  <!--td class="managetabhead112">Delete</td-->
+                </tr>
+                <!-- BEGIN managefiles -->
+                <tr class="managetabhead113">
+                  <td>{uname}</td>
+                  <td>{date}</td>
+                  <td>{country}</td>
+                  <td>{totspendtime}</td>
+                  <td><a href="viewstats.php?i={uid}&return={returnurl}" class="green_link">View</a></td>
+                  <!--td><a href="deletestats.php?id={id}&return={returnurl}"  onClick="return confirmLink('Do you really wish to delete this stats?', this,'deletestats.php?id={id}&return={returnurl}')" class="green_link">Delete</a></td-->
+                </tr>
+                <!-- END managefiles -->
+              </table>
+            </div>
+            <table width="90%" align="center">
+                <tr>
+                  <td>{paging}</td>
+                </tr>
+              </table>
+            <!-- END StartManageFiles -->
+            <!-- BEGIN NoManageFiles -->
+             <div class="errorblock">{space}No Statistics found</div>
+            <!-- END NoManageFiles -->
+            <br />
+
+			<div class="paging" style="padding-top:20px;">{paging}</div>
+            <br /><br />
+
+            </div>
+         <!-- END ADMIN_INNER_PAGE -->
+       </div>
+     <!-- End content -->
+     <div id="footer">{footer}</div>
+</div>
+<!-- END INNER_PAGE -->
+</body>
+</html>

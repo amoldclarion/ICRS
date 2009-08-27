@@ -1,0 +1,124 @@
+a:4:{s:6:"blocks";a:3:{s:10:"__global__";s:230:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+{__INNER_PAGE__}
+</body>
+</html>";s:10:"INNER_PAGE";s:217:"<div class="maindiv">
+<!-- header -->
+<div id="header">{header}</div>
+<!-- header -->
+<!-- Start content -->
+<div id="content">
+{__ADMIN_INNER_PAGE__}
+</div>
+<!-- End content -->
+<div id="footer">{footer}</div>
+</div>";s:16:"ADMIN_INNER_PAGE";s:3790:"<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+<div id="arightmenu" class="arightmenu"><br />
+<!-- Add Content Start -->
+<div class="addsectab" align="center">
+<div class="addsecheading">Add Page</div>
+<div style="clear:both;"></div>
+<form name="frmaddsec" action="addpage.php" method="post" enctype="multipart/form-data" style="display:inline;" onsubmit="return validatepage(this);">
+<table width="100%" cellpadding="4" cellspacing="4" border="0">
+<tr>
+<td colspan="2" align="center"><div class="errorblock">{error_message}</div></td>
+</tr>
+<tr>
+<td colspan="2" align="right"><span class="style1">Field marked as * are mandatory</span></td>
+</tr>
+<tr>
+<td align="right" width="50%"><span class="style1">*</span>Page name : </td>
+<td><div align="left">
+<select id="page_name" name="page_name">
+<option value="--">--Select Page Name--</option>
+{optpagename}
+</select>
+</div></td>
+</tr>
+<tr>
+<td align="right" width="50%"><span class="style1">*</span>Page title : </td>
+<td><div align="left">
+<input type="text" name="page_title" id="page_title" value="{page_title}" />
+</div></td>
+</tr>
+<tr>
+<td align="right" width="50%"><span class="style1">*</span>By whom : </td>
+<td><div align="left">
+<input type="text" name="by_whom" id="by_whom" value="{by_whom}" />
+</div></td>
+</tr>
+<tr>
+<td align="right" width="50%">Short Description : </td>
+<td><div align="left">
+<textarea id="shot_description" name="shot_description" rows="3" cols="45">{shot_description}</textarea>
+</div></td>
+</tr>
+<tr>
+<td align="right" width="50%">Long Description : </td>
+<td>
+<div align="left">
+<textarea id="long_description" name="long_description" rows="3" cols="45">{long_description}</textarea>
+<script language="javascript" type="text/javascript" src="tiny_mce/tiny_mce.js"></script>
+<script language="javascript" type="text/javascript">
+tinyMCE.init({
+// General options
+mode : "exact",
+elements : "long_description",
+theme : "advanced",
+plugins : "safari",
+// Theme options
+theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull",
+//theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+theme_advanced_buttons3 : "",
+height:"300px",
+width:"450px",
+theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak",
+theme_advanced_toolbar_location : "top",
+theme_advanced_toolbar_align : "left",
+theme_advanced_statusbar_location : "bottom",
+theme_advanced_resizing : true,
+// Example content CSS (should be your site CSS)
+content_css : "css/content.css",
+// Drop lists for link/image/media/template dialogs
+template_external_list_url : "lists/template_list.js",
+external_link_list_url : "lists/link_list.js",
+external_image_list_url : "lists/image_list.js",
+media_external_list_url : "lists/media_list.js",
+// Replace values for the template plugin
+template_replace_values : {
+username : "Some User",
+staffid : "991234"
+}
+});
+</script>
+</div></td>
+</tr>
+<tr>
+<td align="right">Image : </td>
+<td><div align="left">
+<input type="file" name="img" readonly="readonly" /><br />
+<span class="style1">(Please upload only jpg or gif or png images)</span>
+</div></td>
+</tr>
+<tr>
+<td align="right" width="50%">Set order : </td>
+<td><div align="left">
+<input type="text" name="isorder" id="isorder" value="{isorder}" />
+</div></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><div align="left">
+<input type="submit" name="submit" value="Add Page" />
+</div></td>
+</tr>
+</table>
+</form>
+</div>
+<div style="clear:both;"><br /></div>
+<!-- Add Content End -->
+</div>";}s:9:"variables";a:3:{s:10:"__global__";a:2:{s:7:"metatag";b:1;s:14:"__INNER_PAGE__";b:1;}s:10:"INNER_PAGE";a:3:{s:6:"header";b:1;s:20:"__ADMIN_INNER_PAGE__";b:1;s:6:"footer";b:1;}s:16:"ADMIN_INNER_PAGE";a:8:{s:8:"leftmenu";b:1;s:13:"error_message";b:1;s:11:"optpagename";b:1;s:10:"page_title";b:1;s:7:"by_whom";b:1;s:16:"shot_description";b:1;s:16:"long_description";b:1;s:7:"isorder";b:1;}}s:8:"children";a:3:{s:10:"__global__";a:1:{s:10:"INNER_PAGE";b:1;}s:10:"INNER_PAGE";a:1:{s:16:"ADMIN_INNER_PAGE";b:1;}s:16:"ADMIN_INNER_PAGE";a:0:{}}s:9:"functions";a:3:{s:10:"__global__";a:0:{}s:10:"INNER_PAGE";a:0:{}s:16:"ADMIN_INNER_PAGE";a:0:{}}}

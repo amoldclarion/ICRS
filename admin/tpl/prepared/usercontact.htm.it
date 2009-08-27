@@ -1,0 +1,59 @@
+a:4:{s:6:"blocks";a:6:{s:10:"__global__";s:230:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+{__INNER_PAGE__}
+</body>
+</html>";s:10:"INNER_PAGE";s:217:"<div class="maindiv">
+<!-- header -->
+<div id="header">{header}</div>
+<!-- header -->
+<!-- Start content -->
+<div id="content">
+{__ADMIN_INNER_PAGE__}
+</div>
+<!-- End content -->
+<div id="footer">{footer}</div>
+</div>";s:16:"ADMIN_INNER_PAGE";s:767:"<div id="aleftmenu" class="aleftmenu">{leftmenu}</div>
+<div id="arightmenu" class="arightmenu">
+<br />
+<br />
+<div class="manageheader">Contact Us</div>
+<div style="clear:both;"><br /></div>
+<form name="frmSearch" method="post" action="usercontact.php" style="display:inline;">
+<div class="manasearch">
+<div class="mamasearchtext">Search &nbsp;:&nbsp;</div>
+<div class="manseartxt"><input type="text" name="nsearch" id="nsearch" value="{nsearch}" />&nbsp;<input type="submit" name="submit" value="Go" /></div>
+<div style="margin-top:10px;"></div>
+<div style="margin-top:10px;"></div>
+</div>
+</form>
+<div style="clear:both;"><br /></div>
+{__StartManageFiles__}
+{__NoManageFiles__}
+<br />
+<div class="paging" style="padding-top:20px;">{paging}</div>
+<br /><br />
+</div>";s:16:"StartManageFiles";s:410:"<div class="managetable">
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr>
+<td width="24%" class="managetabhead112">Name</td>
+<td width="28%" class="managetabhead112">Email Address</td>
+<td width="9%" class="managetabhead112">View</td>
+<td width="11%" class="managetabhead112">Delete</td>
+</tr>
+{__managefiles__}
+</table>
+</div>
+<table width="90%" align="center">
+<tr>
+<td>{paging}</td>
+</tr>
+</table>";s:11:"managefiles";s:381:"<tr class="managetabhead113">
+<td>{name}</td>
+<td>{email}</td>
+<td><a href="viewcontact.php?id={id}&return={returnurl}" class="green_link">View</a></td>
+<td><a href="deletecontact.php?id={id}&return={returnurl}"  onClick="return confirmLink('Do you really wish to delete this contact?', this,'deletecontact.php?id={id}&return={returnurl}')" class="green_link">Delete</a></td>
+</tr>";s:13:"NoManageFiles";s:53:"<div class="errorblock">{space}No contact found</div>";}s:9:"variables";a:6:{s:10:"__global__";a:2:{s:7:"metatag";b:1;s:14:"__INNER_PAGE__";b:1;}s:10:"INNER_PAGE";a:3:{s:6:"header";b:1;s:20:"__ADMIN_INNER_PAGE__";b:1;s:6:"footer";b:1;}s:16:"ADMIN_INNER_PAGE";a:5:{s:8:"leftmenu";b:1;s:7:"nsearch";b:1;s:20:"__StartManageFiles__";b:1;s:17:"__NoManageFiles__";b:1;s:6:"paging";b:1;}s:16:"StartManageFiles";a:2:{s:15:"__managefiles__";b:1;s:6:"paging";b:1;}s:11:"managefiles";a:4:{s:4:"name";b:1;s:5:"email";b:1;s:2:"id";b:1;s:9:"returnurl";b:1;}s:13:"NoManageFiles";a:1:{s:5:"space";b:1;}}s:8:"children";a:6:{s:10:"__global__";a:1:{s:10:"INNER_PAGE";b:1;}s:10:"INNER_PAGE";a:1:{s:16:"ADMIN_INNER_PAGE";b:1;}s:16:"ADMIN_INNER_PAGE";a:2:{s:16:"StartManageFiles";b:1;s:13:"NoManageFiles";b:1;}s:16:"StartManageFiles";a:1:{s:11:"managefiles";b:1;}s:11:"managefiles";a:0:{}s:13:"NoManageFiles";a:0:{}}s:9:"functions";a:6:{s:10:"__global__";a:0:{}s:10:"INNER_PAGE";a:0:{}s:16:"ADMIN_INNER_PAGE";a:0:{}s:16:"StartManageFiles";a:0:{}s:11:"managefiles";a:0:{}s:13:"NoManageFiles";a:0:{}}}

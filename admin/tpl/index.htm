@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body>
+<!-- BEGIN INDEX_PAGE -->
+<div class="maindiv">
+	<!-- header -->
+		<div id="header">{header}</div>
+    <!-- header -->
+     <!-- Start content -->
+       <div id="content">
+        <div style="clear:both;"><br /><br /><br /><br /><br /><br /></div>
+        <form name="frmlogin" method="post" action="#" enctype="multipart/form-data" style=" display:inline;" onsubmit="return validate(this);">
+        <input type="hidden" name="ret" value="{ret}" />
+        <input type="hidden" name="sid" value="{sid}" />
+        <div id="adminloginbox" class="adminloginbox" align="center">
+          <div class="adminheading">	
+         	{space}Admin Login
+          </div>
+           <div style="clear:both;"></div>
+           <div class="errorblock">{errormessage}</div>
+	       <div style="clear:both;"></div>
+           <div class="admintr">
+	           <div class="admintd">User Name : </div>
+    	       <div class="admintdl"><input type="text" name="struname" id="struname" value="{struname}" /></div>
+           </div>
+           <div style="clear:both;"></div>
+           <div class="admintr">
+               <div class="admintd">Password : </div>
+               <div class="admintdl"><input type="password" name="pass" id="pass" value="" /></div>
+           </div>
+           <div style="clear:both;"></div>
+           <div class="admintr">
+               <div class="admintd">&nbsp;</div>
+               <div class="admintdl"><input type="submit" name="submit" value="Log In" /></div>
+           </div>
+        </div>
+        </form>
+       </div>
+     <!-- End content -->
+     <div id="footer">{footer}</div>
+</div>
+
+  
+<!-- END INDEX_PAGE -->
+</body>
+</html>
