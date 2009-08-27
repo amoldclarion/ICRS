@@ -1,0 +1,74 @@
+<!-- BEGIN __INDEX_PAGE__ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+<div align="center">
+<div class="maindiv">
+<!-- header start -->
+{header}
+<!-- header end -->
+<!-- menu start -->		
+  {menu}
+  <!-- menu end -->
+  <!-- content start -->
+   <div id="content">
+     <div id="login" class="login">
+       <div style="margin-left:5px;"> <!-- Start -->
+                <div>
+                  <b class="spiffy">
+                  <b class="spiffy1"><b></b></b>
+                  <b class="spiffy2"><b></b></b>
+                  <b class="spiffy3"></b>
+                  <b class="spiffy4"></b>
+                  <b class="spiffy5"></b></b>
+                
+                  <div class="spiffyfg">
+                     ICRS Intracardiac Login
+                  </div>
+                </div>
+              <div style="border:1px solid #E7E7E7; height:400px;z-index:-999;">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+				<form action="login.htm" method="post" name="frm" enctype="multipart/form-data" onsubmit="return validatelogin(this);" style="display:inline;">
+              	<table width="80%" cellpadding="7" cellspacing="0" border="0" align="center">
+                  <tr>
+                    <td colspan="2" class="errorblock">{error_message}</td>
+                  </tr>
+                  <tr>
+                    <td class="ltext">User Name : </td>
+                    <td class="rtext"><input type="text" name="userid" id="userid" value="{userid}" /></td>
+                  </tr>
+                  <tr>
+                    <td class="ltext">Password : </td>
+                    <td class="rtext"><input type="password" name="pass" id="pass" value="" /></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td class="rtext"><input type="submit" name="submit" value="Login" />&nbsp;&nbsp;<a href="forgotpassword.htm" class="green_link">Forgot Password?</a></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td class="rtext"></td>
+                  </tr>
+                </table>
+                </form>
+              </div>
+              </div> <!-- End -->
+     </div>
+   </div>
+  <!-- content end -->
+  <!-- footer  start -->
+   {footer}
+  <!-- footer  end -->
+</div>
+</div>
+</body>
+</html>
+<!-- END __INDEX_PAGE__ -->

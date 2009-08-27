@@ -1,0 +1,32 @@
+<!-- BEGIN __INDEX_PAGE__ -->{space}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+<link href="../css/style.css" rel="stylesheet" />
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+<div align="center">
+<div class="maindiv">
+<!-- header start -->
+{header}
+<!-- header end -->
+<div style="clear:both;">&nbsp;</div>
+<!-- menu start -->		
+  {menu}
+  <!-- menu end -->
+  <div style="clear:both;">&nbsp;</div>
+  <!-- content start -->
+   <div id="content">
+     <div id="aleftmenu" class="aleftmenu">&nbsp;</div>
+     <div id="midmenu" class="midmenu">&nbsp;</div>
+     <div id="arightmenuopage" class="arightmenuopage">&nbsp;</div>
+   </div>
+  <!-- content end -->
+  <!-- footer  start -->
+   {footer}
+  <!-- footer  end -->
+</div>
+</div>
+</body>
+</html>
+<!-- END __INDEX_PAGE__ -->

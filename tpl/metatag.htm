@@ -1,0 +1,45 @@
+<!-- BEGIN __METATAG__ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{site_name}css/style.css" rel="stylesheet" />
+<title>IRCS</title>
+<script type="text/javascript" src="{site_name}js/prototype.js"></script>
+<script type="text/javascript" src="{site_name}js/validation.js"></script>
+<script type="text/javascript" src="{site_name}js/x.js"></script>
+<script type="text/javascript">
+function adjustLayout()
+{
+  // Get natural heights
+  var cHeight = xHeight("aleftmenu");
+  var lHeight = xHeight("midmenu");
+  if(document.getElementById("arightmenuopage")){
+	  var rHeight = xHeight("arightmenuopage");
+  }
+  if(document.getElementById("arightmenuopage1")){
+  	  var rHeight = xHeight("arightmenuopage1");	
+  }
+  //alert(rHeight);
+
+  // Find the maximum height
+  var maxHeight = Math.max(cHeight, Math.max(lHeight, rHeight));
+
+  // Assign maximum height to all columns
+  xHeight("aleftmenu", maxHeight);
+  xHeight("midmenu", maxHeight);
+  if(document.getElementById("arightmenuopage")){
+	  xHeight("arightmenuopage", maxHeight);
+  }
+  if(document.getElementById("arightmenuopage1")){
+  	  xHeight("arightmenuopage1", maxHeight);
+  }
+
+  // Show the footer
+  //xShow("footer");
+}
+
+window.onload = function()
+{
+  xAddEventListener(window, "resize",adjustLayout, false);
+  adjustLayout();
+}
+</script>
+<!-- END __METATAG__ -->

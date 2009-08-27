@@ -1,0 +1,69 @@
+<!-- BEGIN __INDEX_PAGE__ --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+<div align="center">
+<div class="maindiv">
+<!-- header start -->
+{header}
+<!-- header end -->
+<!-- menu start -->		
+  {menu}
+  <!-- menu end -->
+  <!-- Start content -->
+       <div id="content">
+       	 <!-- BEGIN INNER_PAGE -->
+         	<div id="aleftmenu" class="aleftmenu2">
+              <div style="margin-left: 0.2em;"> <!-- Start -->
+                <div>
+                  <b class="spiffy">
+                  <b class="spiffy1"><b></b></b>
+                  <b class="spiffy2"><b></b></b>
+                  <b class="spiffy3"></b>
+                  <b class="spiffy4"></b>
+                  <b class="spiffy5"></b></b>
+                  <div class="spiffyfg">
+                     	ICRS News and Updates
+                  </div>
+                </div>
+              <div style="border:1px solid #E7E7E7; height:auto; overflow:auto;">
+                <!-- BEGIN NEWS_LEFT -->
+                <div style="padding:5px; text-align:left;">
+                  <div class="date">{date}</div>
+                  <div class="newsdesc"><strong>{title}</strong>&nbsp;{news_desc}</div>
+                  <div><a href="{site_name}{id}/{news_url}.htm" class="green_link">More..</a></div>
+                </div>
+                <div style="clear:both;"></div>
+                <!-- END NEWS_LEFT -->
+				<div class="shownews"><a href="{site_name}news.htm" class="green_link">See All News..</a></div>
+              </div>
+              </div> <!-- End -->
+              <div style="clear:both;"><br /></div>
+     </div>
+            <div id="midmenu" class="midmenu">&nbsp;</div>
+            <div id="arightmenuopage" class="arightmenuopage2">
+            	<!-- BEGIN NEWS -->
+                <div style="padding:5px;">
+                  <h1 align="left"><strong>{title}</strong></h1>	
+                  <div class="date" align="left">{date}</div>
+                  <div class="newsdesc" align="left">{news_desc}</div>
+                </div>
+                <div style="clear:both;"></div>
+                <!-- END NEWS -->
+                <!-- BEGIN NO_NEWS -->
+                	<div class="errorblock">{no_news}</div>
+                <!-- END NO_NEWS -->
+            </div>
+         <!-- END INNER_PAGE -->
+       </div>
+     <!-- End content -->
+  <!-- footer  start -->
+   {footer}
+  <!-- footer  end -->
+</div>
+</div>
+</body>
+</html>
+<!-- END __INDEX_PAGE__ -->

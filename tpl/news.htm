@@ -1,0 +1,72 @@
+<!-- BEGIN __INDEX_PAGE__ --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+<div align="center">
+<div class="maindiv">
+<!-- header start -->
+{header}
+<!-- header end -->
+<!-- menu start -->		
+  {menu}
+  <!-- menu end -->
+  <!-- Start content -->
+       <div id="content">
+       	 <!-- BEGIN INNER_PAGE -->
+            <div id="aleftmenu2" class="aleftmenu2">
+             <div class="left_links">
+             <div>
+                  <b class="spiffy">
+                  <b class="spiffy1"><b></b></b>
+                  <b class="spiffy2"><b></b></b>
+                  <b class="spiffy3"></b>
+                  <b class="spiffy4"></b>
+                  <b class="spiffy5"></b></b>
+                  <div class="spiffyfg">&nbsp;</div>
+                </div>
+                <div style="border:1px solid #CCCCCC; height:auto; padding:8px;">
+                	<!-- BEGIN YEAR_LINK -->
+                    <form name="form{left_link}" id="form{left_link}" action="#" method="post">
+                	<div style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; font-weight:bold; text-align:left;"><a href="#" class="green_link">{left_link}</a></div>
+                    <!-- BEGIN MON_LINK -->
+                    <div style='padding:3px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; font-weight:bold; text-align:left;'><a href='{site_name}{intMonthId}/{intYear}.htm' class='green_link'>{mon} ({totcnt})</a></div><br />
+                    <!-- END MON_LINK -->
+                    <!--div id="month_link_{left_link}"></div-->
+                    </form>
+                    <!-- END YEAR_LINK -->
+                </div>
+               </div>
+            </div>
+            <div id="midmenu" class="midmenu">&nbsp;</div>
+         	<div id="arightmenuopage" class="arightmenuopage2">
+              <div class="letter_pagging">
+              	<a href="{site_name}a/news.htm" class="green_link">A</a>&nbsp;<a href="{site_name}b/news.htm" class="green_link">B</a>&nbsp;<a href="{site_name}c/news.htm" class="green_link">C</a>&nbsp;<a href="{site_name}d/news.htm" class="green_link">D</a>&nbsp;<a href="{site_name}e/news.htm" class="green_link">E</a>&nbsp;<a href="{site_name}f/news.htm" class="green_link">F</a>&nbsp;<a href="{site_name}g/news.htm" class="green_link">G</a>&nbsp;<a href="{site_name}h/news.htm" class="green_link">H</a>&nbsp;<a href="{site_name}i/news.htm" class="green_link">I</a>&nbsp;<a href="{site_name}j/news.htm" class="green_link">J</a>&nbsp;<a href="{site_name}k/news.htm" class="green_link">K</a>&nbsp;<a href="{site_name}l/news.htm" class="green_link">L</a>&nbsp;<a href="{site_name}m/news.htm" class="green_link">M</a>&nbsp;<a href="{site_name}n/news.htm" class="green_link">N</a>&nbsp;<a href="{site_name}o/news.htm" class="green_link">O</a>&nbsp;<a href="{site_name}p/news.htm" class="green_link">P</a>&nbsp;<a href="{site_name}q/news.htm" class="green_link">Q</a>&nbsp;<a href="{site_name}r/news.htm" class="green_link">R</a>&nbsp;<a href="{site_name}s/news.htm" class="green_link">S</a>&nbsp;<a href="{site_name}t/news.htm" class="green_link">T</a>&nbsp;<a href="{site_name}u/news.htm" class="green_link">U</a>&nbsp;<a href="{site_name}v/news.htm" class="green_link">V</a>&nbsp;<a href="{site_name}w/news.htm" class="green_link">W</a>&nbsp;<a href="{site_name}x/news.htm" class="green_link">X</a>&nbsp;<a href="{site_name}y/news.htm" class="green_link">Y</a>&nbsp;<a href="{site_name}z/news.htm" class="green_link">Z</a>
+                </div>	
+              <div style="clear:both;"><br /></div>
+              <div class="paging">{paging}</div>
+              <div style="clear:both;"><br /></div>
+              <!-- BEGIN NEWS -->
+                <div style="padding:2px;margin-bottom:5px;">
+                  <div class="date" align="left">{date}</div>
+                  <h5 align="left"><a href="{site_url}{id}/{news_url}.htm" style="text-decoration:none;color:#3A63BD;">{title}</a></h5><div class="newsdesc" align="left">{news_desc}</div>
+                  <div align="left"><a href="{site_url}{id}/{news_url}.htm" class="green_link">More..</a></div>
+                </div>
+                <div style="clear:both;"></div>
+                <!-- END NEWS -->
+                <!-- BEGIN NO_NEWS -->
+                	<div class="errorblock">{no_news}</div>
+                <!-- END NO_NEWS -->
+            </div>
+         <!-- END INNER_PAGE -->
+       </div>
+     <!-- End content -->
+  <!-- footer  start -->
+   {footer}
+  <!-- footer  end -->
+</div>
+</div>
+</body>
+</html>
+<!-- END __INDEX_PAGE__ -->

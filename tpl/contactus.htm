@@ -1,0 +1,79 @@
+<!-- BEGIN __INDEX_PAGE__ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+<div align="center">
+<div class="maindiv">
+<!-- header start -->
+{header}
+<!-- header end -->
+<!-- menu start -->		
+  {menu}
+  <!-- menu end -->
+  
+  <div id="content">
+     <div id="login" class="login">
+       <div style="margin-left:5px;"> <!-- Start -->
+                <div>
+                  <b class="spiffy">
+                  <b class="spiffy1"><b></b></b>
+                  <b class="spiffy2"><b></b></b>
+                  <b class="spiffy3"></b>
+                  <b class="spiffy4"></b>
+                  <b class="spiffy5"></b></b>
+                
+                  <div class="spiffyfg">
+                     ICRS Intracardiac Contact Us
+                  </div>
+                </div>
+              <div style="border:1px solid #E7E7E7; height:auto;z-index:-999;">
+<br />
+				<form action="#" method="post" name="frm" enctype="multipart/form-data" onsubmit="return validatecontact(this);" style="display:inline;">
+              	<table width="100%" cellpadding="4" cellspacing="4">
+                      <tr>
+                        <td colspan="2"><div class="errorblock">{error_message}</div></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><div class="style1">Field marked as * are mandatory</div></td>
+                      </tr>
+                      <tr>
+                        <td width="49%" align="right" style="font-family:Verdana; font-size:10pt; font-weight:bold;"><span class="style1">*</span>Name : </td>
+                        <td width="51%" align="left"><input type="text" id="name" name="name" value="{name}" /></td>
+                      </tr>
+                      <tr>
+                        <td align="right" style="font-family:Verdana; font-size:10pt; font-weight:bold;"><span class="style1">*</span>Email Address : </td>
+                        <td align="left"><input type="text" id="email" name="email" value="{email}" /></td>
+                      </tr>
+                      <tr>
+                        <td align="right" style="font-family:Verdana; font-size:10pt; font-weight:bold;"><span class="style1">*</span>Message : </td>
+                        <td align="left"><textarea id="briefmessage" name="briefmessage" rows="10" cols="45">{briefmessage}</textarea></td>
+                      </tr>
+                      <tr>
+                        <td align="right" style="font-family:Verdana; font-size:10pt; font-weight:bold;"><span class="style1">*</span>Verification code :</td>
+                        <td align="left"><img src="getimage.php" title="Verification code" alt="Verification code" /></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td align="left"><input type="text" name="challenge_string" id="challenge_string" value="" maxlength="6"  size="6" /></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td align="left"><input type="submit" name="Submit" value="Contact Us" /></td>
+                      </tr>
+                    </table>
+                </form>
+              </div>
+              </div> <!-- End -->
+     </div>
+   </div>
+  <!-- footer  start -->
+   {footer}
+  <!-- footer  end -->
+</div>
+</div>
+</body>
+</html>
+<!-- END __INDEX_PAGE__ -->

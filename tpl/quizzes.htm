@@ -1,0 +1,53 @@
+<!-- BEGIN __INDEX_PAGE__ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+<div align="center">
+<div class="maindiv">
+<!-- header start -->
+{header}
+<!-- header end -->
+<!-- menu start -->		
+  {menu}
+  <!-- menu end -->
+  <!-- content start -->
+   <div id="content">
+     <div id="login" class="login">
+       <div style="margin-top:10px;text-align:center;"><h2>{uname} Test Scores</h2></div>
+       <hr />
+       <div style=" font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9pt;" align="center">
+			<table width="60%" cellpadding="5" cellspacing="0" border="0">
+              <tr>
+               <td width="55%" style="font-size:12pt; font-weight:bold;"  align="left">Quiz</td>
+               <td width="45%" align="right" style="font-size:12pt; font-weight:bold;">Highest recorded Score</td>
+              </tr>
+              <tr>
+               <td align="center" colspan="2"><hr style="width:80%" /></td>
+              </tr>
+              <!-- BEGIN quiz_topic -->
+              <tr style="font-size:10pt; font-weight:normal;">
+               <td align="left">{topic}</td>
+               <td align="right">
+               	<table width="100%"><tr><td width="50%">{result}</td><td><a href="{site_name}title/{qid}/quiztitle.htm" class="green_link">{quiz_take}</a></td></tr></table>
+               </td>
+              </tr>
+              <tr>
+               <td align="center" colspan="2"><hr style="width:80%" /></td>
+              </tr>
+              <!-- END quiz_topic -->
+            </table>         
+       </div>
+     </div>
+   </div>
+  <!-- content end -->
+  <!-- footer  start -->
+   {footer}
+  <!-- footer  end -->
+</div>
+</div>
+</body>
+</html>
+<!-- END __INDEX_PAGE__ -->

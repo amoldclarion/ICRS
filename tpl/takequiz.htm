@@ -1,0 +1,73 @@
+<!-- BEGIN __INDEX_PAGE__ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{metatag}
+</head>
+<body topmargin="0" bottommargin="0" rightmargin="0" leftmargin="0">
+<div align="center">
+<div class="maindiv">
+<!-- header start -->
+{header}
+<!-- header end -->
+<!-- menu start -->		
+  {menu}
+  <!-- menu end -->
+  <!-- content start -->
+   <div id="content">
+     <div id="login" class="login">
+       <div style="margin-top:10pt;text-align:center;">You are taking the <b>{cname}</b> quiz</div>
+       <div style="clear:both;"><br /></div>
+       <hr />
+       <div style=" font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9pt;" align="center">
+       <!-- BEGIN quiz_question -->
+	       <form action="#" method="post" name="frmquiz">
+           <input type="hidden" name="mid" value="{mid}" />
+           <input type="hidden" name="quiz_title_id" value="{quiz_title_id}" />
+			<table width="60%" cellpadding="5" cellspacing="0" border="0">
+              <tr>
+               <td width="100%" style="font-size:12pt; font-weight:bold;" align="left">
+               <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                 <tr>
+                   <td width="5%">{srno})</td>
+                   <td width="90%">{question}</td>
+                   <td style="font-size:10pt;" align="right"><a href="{site_name}mod/{mid}/moduledesc.htm" class="green_link">re-review</a></td>
+                 </tr>
+               </table>
+               </td>
+              </tr>
+              <tr>
+                <td>                   
+                   {option}
+                </td>
+              </tr>
+              <tr>
+               <td align="center" colspan="2"><hr style="width:80%" /></td>
+              </tr>
+            </table>     
+             <!-- END quiz_question -->
+            <table width="60%" cellpadding="5" cellspacing="0" border="0">
+            <tr>
+                <td align="center" colspan="2"><input type="submit" name="submit_ans" value="Submit Answer" /></td>
+            </tr>
+            </table>
+            </form>
+            <!-- BEGIN no_question -->
+            <table width="60%" cellpadding="5" cellspacing="0" border="0">
+              <tr>
+                <td class="errorblock">{space1}No question added yet!</td>
+              </tr>
+            </table>
+            <!-- END no_question -->
+       </div>
+     </div>
+   </div>
+  <!-- content end -->
+  <!-- footer  start -->
+   {footer}
+  <!-- footer  end -->
+</div>
+</div>
+</body>
+</html>
+<!-- END __INDEX_PAGE__ -->
