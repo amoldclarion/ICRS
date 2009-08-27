@@ -1,0 +1,57 @@
+#menu {width:100%; height:40px; background:url(../images/bgright.png) right top no-repeat; text-align:center; overflow:hidden;}
+
+#menu ul {margin:0; padding:0; list-style:none; white-space:nowrap;}
+#menu ul {display:inline-block;} 
+#menu ul {display:inline;}
+
+#menu li {display:inline-block; display:inline;}
+#menu ul.level1 div {position:absolute; left:-9999px;}
+
+#menu  ul.level1 li.first{
+	background:url(../images/leftHeader.png) left top no-repeat; 
+	width:7px;
+	height:40px; 
+	margin:0px; 
+	padding:0px;
+	display:block;
+	float:left;
+	position:absolute;
+	left:7px;
+}
+
+#menu ul.level1 {display:table; margin:0 auto;}
+#menu ul.level1 li.level1-li {float:left; display:block; position:relative;background:url(../images/gradientOver.jpg) right top no-repeat;}
+
+#menu ul li div ul {margin:0; background:url(trans.gif);}
+
+#menu a.level1-a {display:block; font:11pt Arial, Helvetica, sans-serif;  color:#fff; line-height:40px; text-decoration:none;padding:0 9px 0 9px; text-align:center;}
+#menu ul.level1 li.level1-li a.level1-a {float:left;}
+
+#menu ul li:hover div {left:50%; top:40px;}
+#menu ul li:hover div ul {display:block; position:relative; left:-50%;}
+#menu ul li div ul li a {height:40px; 	font:11pt Arial, Helvetica, sans-serif;  color:#000; line-height:40px; text-decoration:none; padding:6px;}
+
+#menu a:hover div {left:0; top:40px;}
+
+#menu a:hover div ul {position:relative; left:-50%;}
+
+#menu li a.fly {background:transparent url(center-center/down-arrow.gif) no-repeat right center;}
+
+#menu li a:hover,
+#menu li a.fly:hover {white-space:nowrap;background:url(../images/gradientOver.jpg) repeat-x; 	color:#FFF;} 
+#menu li:hover > a,
+#menu ul li:hover > a.fly {color:#FFF;}
+#menu ul li div ul li a:hover {color:#FFF;}
+
+
+#menu li a:active, #menu li a:active b, #menu li a.current{
+	background: url(../images/gradientactive.jpg) repeat-x;
+	color:#FFF;
+	}
+#menu ul.level1 li.nobg
+{
+	border-right:none;
+	background:none;
+}
+
+#menu table {position:absolute; height:0; width:0; left:50%; border-collapse:collapse; margin-top:-4px;}
